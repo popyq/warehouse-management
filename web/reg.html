@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>管理员注册</title>
+		<!-- 引入外部的CSS文件 -->
+		<link rel="stylesheet" href="css/reg.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="./js/xhr.js"></script>
+		<script src="./js/register.js"></script>
+	</head>
+	<body>
+		<div class="wrap animated bounceInRight">
+			<!-- 顶部大标题 -->
+			<h1>仓库管理系统</h1>
+			<div class="reg">
+				<h3>管理员注册</h3>
+				<div class="title-line"></div>
+				<!-- 登录表单 -->
+				<div class="reg-form">
+					<form action="registerServlet" >
+						<div class="input-gorup">
+							<span class="icon icon-user"></span>
+							<input type="text" name="username" class="input-txt" placeholder="请输入用户名"
+							 id="username" />
+							<span id="err-username"></span>
+						</div>
+						<div class="input-gorup">
+							<span class="icon icon-pwd"></span>
+							<input type="password" name="password" class="input-txt" placeholder="请输入密码" />
+							<span id="err-pwd"></span>
+						</div>
+						<div class="input-gorup">
+							<span class="icon icon-pwd"></span>
+							<input type="password" name="repassword" id="repassword" class="input-txt" placeholder="请确认密码" />
+							<span id="err-repwd"></span>
+						</div>
+						<!-- 注意:在H5中button按钮若在form表单中，默认就有提交效果，
+						若不要默认的提交效果，则可以加上type属性，并把值设置为button即可 -->
+						<button class="btn-reg">添加帐号</button>
+					</form>
+					<div class="account-link">
+						<a href="login.html">返回</a>
+					</div>
+					<p class="copyright">&copy;By Mr.Liu</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

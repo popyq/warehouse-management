@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="./js/xhr.js"></script>
+		<script src="./js/login.js"></script>
+	</head>
+	<body>
+		<div class="wrap animated bounceInLeft">
+			<!-- 顶部大标题 -->
+			<h1><font color="black">仓库管理系统</font></h1>
+			<div class="login">
+				<h3>管理员登录</h3>
+				<div class="title-line"></div>
+				<div class="logo">
+					<img src="img/location.png" />
+				</div>
+				<!-- 登录表单 -->
+				<div class="login-form">
+                    <!--此处映射对应的servlet请求地址!!!!-->
+					<form action="home_page.jsp">
+						<div class="input-gorup">
+							<span class="icon icon-user"></span>
+							<input type="text" name="username" class="input-txt" placeholder="请输入账号名称" />
+						</div>
+						<div class="input-gorup">
+							<span class="icon icon-pwd">&nbsp;&nbsp;</span>
+							<input type="password" name="password" class="input-txt" placeholder="请输入密码" />
+						</div>
+
+						<span id="err-login"></span>
+
+
+						<!-- 注意:在H5中button按钮若在form表单中，默认就有提交效果，
+						若不要默认的提交效果，则可以加上type属性，并把值设置为button即可 -->
+						<input class="btn-login" value="登录" type="button" onclick="mylogin()">
+					</form>
+					<div class="account-link">
+						<a href="">忘记密码?</a>
+						<a href="reg.html">没有帐号?注册一个</a>
+					</div>
+					<p class="copyright">&copy;By Mr.Liu</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

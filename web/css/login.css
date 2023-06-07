@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	background: #0CE093;
+}
+.wrap{
+	position: absolute;
+	width: 360px;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	margin: -300px 0 0 -180px;
+	/*border: 1px solid red;*/
+}
+.wrap>h1{
+	text-align: center;/*文本水平居中*/
+	font-size: 1.5em;/*1em = 16px*/
+	font-weight: 200;/*字体加粗*/
+	color: rgba(255, 255, 255, .9);
+	height: 70px;
+}
+.login{
+	height: 530px;
+	background: rgb(50, 54, 66);
+}
+.logo,.login-form{
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.login>h3{
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 100;
+	letter-spacing: 5px;/*字符间距*/
+}
+.title-line{
+	width: 100px;
+	height: 1px;
+	border-bottom: 1px solid #ccc;
+	margin-left: 130px;
+}
+.logo{
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	padding: 10px 0;
+}
+.logo>img{
+	width: 140px;
+}
+.login-form{
+	top: 292px;
+	bottom: 0;
+	height: 300px;
+}
+.input-gorup{
+	width: 260px;
+	margin-left: 50px;/*左外边距*/
+	margin-bottom: 20px;/*下外边距*/
+	height: 50px;
+	background: rgb(71, 73, 85);
+	border-radius: 5px;/*圆角*/
+}
+.icon,.input-txt{
+	float: left;/*左浮动*/
+	display: inline-block;/*改变显示方式为行内块显示*/
+	height: 50px;
+}
+.icon{
+	width: 50px;
+	background-repeat: no-repeat;/*设置背景图不平铺*/
+	background-position: center center;/*设置背景图垂直居中和水平居中*/ 
+}
+.icon-user{
+	background-image: url(../img/user.png);
+}
+.icon-pwd{
+	background-image: url(../img/pwd.png);
+	
+}
+.input-txt{
+	background: rgb(71, 73, 85);
+	width: 210px;
+	outline: none;/*取消浏览器自带的元素外边框*/
+	color: #fff;
+}
+.btn-login{
+	width: 260px;
+	height: 50px;
+	margin: 20px 50px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	letter-spacing: 10px;
+	background: #0CE093;
+	color: #fff;
+	cursor: pointer;/*鼠标样式*/
+	outline: none;/*去除浏览器默认的外边框效果*/
+}
+.account-link{
+	width: 260px;
+	margin: 0 50px;
+}
+.account-link>a{
+	color: #ccc;
+	font-size: 12px;
+	text-decoration: none;/*去除a元素默认的下边线*/
+}
+.account-link>a:nth-child(2){
+	float: right;
+}
+.account-link>a:hover{
+	color: #fff;
+	text-decoration: underline;/*显示下边线*/
+}
+.copyright{
+	color: #fff;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 12px;
+}
